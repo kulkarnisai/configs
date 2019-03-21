@@ -1,0 +1,9 @@
+{
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
+    "workbench.colorTheme": "Material Theme Darker",
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "window.zoomLevel": 0,
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "editor.minimap.maxColumn": 80,
+    "terminal.integrated.fontFamily": "HackNerdFontComplete-Regular"
+}
