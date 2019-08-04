@@ -1,0 +1,51 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+export PATH="/Users/skulkarn/anaconda3/bin:$PATH"
+POWERLEVEL9K_MODE='awesome-fontconfig'
+
+# powerlevel9k segments
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(anaconda)
+
+# Disable directory icons
+POWERLEVEL9K_HOME_ICON=''
+POWERLEVEL9K_HOME_SUB_ICON=''
+POWERLEVEL9K_FOLDER_ICON=''
+POWERLEVEL9K_ETC_ICON=''
+
+# Shorten Directory Path displayed
+POWERLEVEL9K_SHORTEN_STRATEGY='truncate_to_unique'
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+
+#Conda Environment segment
+POWERLEVEL9K_PYTHON_ICON=''
+POWERLEVEL9K_ANACONDA_FOREGROUND=111
+POWERLEVEL9K_ANACONDA_BACKGROUND=234
+
+# VCS/ Git segment
+POWERLEVEL9K_HIDE_BRANCH_ICON='true'
+POWERLEVEL9K_VCS_SHORTEN_LENGTH=20
+POWERLEVEL9K_VCS_SHORTEN_MIN_LENGTH=20
+POWERLEVEL9K_VCS_SHORTEN_STRATEGY='truncate_from_right'
+POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-untracked git-aheadbehind git-stash git-remotebranch git-tagname)
+
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND=000
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND=002
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND=000
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=248
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=000
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=248
+
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+. /Users/skulkarn/anaconda3/etc/profile.d/conda.sh
